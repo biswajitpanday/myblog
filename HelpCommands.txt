@@ -1,0 +1,2 @@
+ng g module nameOfTheModule --routing
+ng g component nameOfTheModule module
