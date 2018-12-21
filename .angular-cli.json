@@ -21,12 +21,21 @@
       "styles": [
         "style/bootstrap.min.css",
         "style/font-awesome/css/font-awesome.min.css",
+        "style/plugins/toastr/toastr.min.css",
+        "style/plugins/jasny/jasny-bootstrap.min.css",
+
         "style/style.css",
-        "style/site.css"
+        "style/clean-blog.css",
+
+        "../node_modules/ladda/dist/ladda-themeless.min.css",
+        "../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
       ],
       "scripts": [
         "js/jquery-3.1.1.min.js",
-        "js/bootstrap.min.js"
+        "js/bootstrap.min.js",
+        "js/plugins/jasny/jasny-bootstrap.min.js",
+
+        "js/clean-blog.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

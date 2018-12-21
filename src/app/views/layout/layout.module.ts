@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './layout.component';
+import { TopnavbarComponent, FooterComponent } from '../../component';
 
 @NgModule({
     imports: [
@@ -10,7 +11,9 @@ import { LayoutComponent } from './layout.component';
         LayoutRoutingModule,
     ],
     declarations: [
-        LayoutComponent
+        LayoutComponent,
+        TopnavbarComponent,
+        FooterComponent
     ]
 })
 export class LayoutModule { }

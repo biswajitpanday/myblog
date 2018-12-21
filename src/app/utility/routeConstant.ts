@@ -1,4 +1,4 @@
 export class RouteConstant {
-    static User: string = 'user';
-    static Dashboard: string = 'dashboard';
+    static User = 'user';
+    static Dashboard = 'dashboard';
 }
