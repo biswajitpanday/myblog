@@ -1,3 +1,19 @@
+nav a:not(.active-page)::before, nav a:not(.active-page)::after, .s_link {
+    opacity: .5;
+}
+nav a:not(.navbar-brand)::before, .s_link::before {
+    content: "<";
+    padding-right: 2px;
+}
+nav a:not(.navbar-brand)::after, .s_link::after {
+    content: "/>";
+    padding-left: 2px;
+}
+.footer-link li a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
 .post-details-img {
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -7,4 +23,14 @@
 .img-center {
     display:block;
     margin:auto;
+}
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
 }

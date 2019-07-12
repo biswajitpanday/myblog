@@ -24,8 +24,10 @@
         "style/plugins/toastr/toastr.min.css",
         "style/plugins/jasny/jasny-bootstrap.min.css",
 
-        "style/style.css",
         "style/clean-blog.css",
+        "style/noise.css",
+        "style/style.css",
+
 
         "../node_modules/ladda/dist/ladda-themeless.min.css",
         "../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
