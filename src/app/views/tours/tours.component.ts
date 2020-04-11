@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import baguetteBox from 'baguetteBox.js';
 
 @Component({
   selector: 'app-tours',
@@ -9,6 +10,8 @@ export class ToursComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    // console.log(baguetteBox);
+    // baguetteBox.run('.cards-gallery');
   }
 
 }

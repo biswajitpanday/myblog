@@ -1,53 +1,191 @@
-<header class="masthead" style="background-image: url('/assets/img/cover_pic.jpg')">
+<header class="masthead">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="site-heading">
-          <h1>"hello, world!"</h1>
-          <span class="subheading">I'm Biswajit Panday</span>
-          <span class="meta">&amp; I'm a</span> <br/>
-          <span class="meta">Software Engineer</span>
+          <h3>Biswajit Panday</h3>
+          <span class="meta">Full Stack Developer</span>
         </div>
       </div>
     </div>
   </div>
 </header>
-  
+
 <!-- Main Content -->
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
       <div class="post-preview">
-        <h2 class="post-title"> &gt; a bit about me <span class="blink_me">_</span></h2>
-        <p>My name is Biswajit Panday. I’m a lifelong programmer. Currently working as a Software Engineer at KAZ Software Ltd. I live in Dhaka, Bangladesh.</p>
-      </div>
-      <hr>
-
-      <div class="post-preview">
-        <h2 class="post-title"> &gt; my random facts <span class="blink_me">_</span></h2>
-        <p>I love to drink tea but i drink coffee sometimes...<br/>
-          I do travel a lot when i'm free...<br/>
-          I quit smoking... started vaping...<br/>
-          I like hills...<br/>
-          I like nights...<br/>
-          I drink beer... <br/>
-          I like riding bikes...<br/>
-          I like "Real Book" (not facebook), but i have one...<br/>
-          I see the world with my own lens (not with some camera lens)...</p>
-      </div>
-      <hr>
-
-      <div class="post-preview">
-        <h2 class="post-title"> &gt; my focus <span class="blink_me">_</span></h2>
-        <span class="caption text-muted">As a preface, I'm still learning and will be...</span>
-        <p>I've always looking for the opportunities and challenges that are meaningful to me. As a software engineer, 
-          I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven work ethic to literally change the world.
-          As a software engineer I work both on web and mobile platforms. Usually specialized in web and android development. Spend the last 4 years for developing
-          skills in ASP.NET, Angularjs and Javascript. Concurrently for the last 2 years developing android applications using Java and have some previous experience 
-          on Xamarin.
+        <h2 class="post-title"> &gt; about me <span class="blink_me">_</span></h2>
+        <p style="font-family: 'Roboto', sans-serif;">
+          I'm a full stack software engineer from Dhaka, Bangladesh.
+          I've over 5 years of experience developing desktop, web &amp; mobile applications.
+          Was engaged the last 4 years for developing my skills as a web developer using different technologies like
+          <strong>ASP.Net MVC, ASP.Net Core, Angular</strong> etc. Also developed android mobile applications using
+          <strong>Java</strong> for last 1 year. Currently I am working on <strong>Node.Js &amp; React</strong> for
+          building a Social Media type Application. I'm always keen to learn more about new technologies &amp; ready
+          to take new challenges.
         </p>
       </div>
       <hr>
+    </div>
   </div>
+
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="post-preview">
+        <h2 class="post-title"> &gt; professional skills <span class="blink_me">_</span></h2>
+
+        <div class="row mt-5">
+          <div class="col-lg-3 col-md-6">
+            <div class="row justify-content-center align-items-center">
+              <round-progress
+                [current]="dotnet"
+                [max]=100
+                [color]="'#363636'"
+                [background]="'#eaeaea'"
+                [radius]="80"
+                [stroke]="10"
+                [semicircle]="false"
+                [rounded]="true"
+                [clockwise]="true"
+                [responsive]="false"
+                [duration]="800"
+                [animation]="'easeInOutQuart'"
+                [animationDelay]="0"></round-progress>
+              </div>
+              <div class="text-center skill-per">{{dotnet}}%</div>
+              <div class="text-center font-weight-bold">.Net(C#), MVC &amp; Web Api</div>
+              <div class="text-center form-control-sm mb-3">Advance, 3 years</div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6">
+            <div class="row justify-content-center align-items-center">
+              <round-progress
+                [current]="javascript"
+                [max]=100
+                [color]="'#363636'"
+                [background]="'#eaeaea'"
+                [radius]="80"
+                [stroke]="10"
+                [semicircle]="false"
+                [rounded]="true"
+                [clockwise]="true"
+                [responsive]="false"
+                [duration]="800"
+                [animation]="'easeInOutQuart'"
+                [animationDelay]="0"></round-progress>
+              </div>
+              <div class="text-center skill-per">{{javascript}}%</div>
+              <div class="text-center font-weight-bold">JavaScript</div>
+              <div class="text-center form-control-sm mb-3">Expert, 5 years</div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="row justify-content-center align-items-center">
+              <round-progress
+                [current]="nodejs"
+                [max]=100
+                [color]="'#363636'"
+                [background]="'#eaeaea'"
+                [radius]="80"
+                [stroke]="10"
+                [semicircle]="false"
+                [rounded]="true"
+                [clockwise]="true"
+                [responsive]="false"
+                [duration]="800"
+                [animation]="'easeInOutQuart'"
+                [animationDelay]="0"></round-progress>
+              </div>
+              <div class="text-center skill-per">{{nodejs}}%</div>
+              <div class="text-center font-weight-bold">NodeJs</div>
+              <div class="text-center form-control-sm mb-3">Advance, 2 years</div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="row justify-content-center align-items-center">
+              <round-progress
+                [current]="android"
+                [max]=100
+                [color]="'#363636'"
+                [background]="'#eaeaea'"
+                [radius]="80"
+                [stroke]="10"
+                [semicircle]="false"
+                [rounded]="true"
+                [clockwise]="true"
+                [responsive]="false"
+                [duration]="800"
+                [animation]="'easeInOutQuart'"
+                [animationDelay]="0"></round-progress>
+              </div>
+              <div class="text-center skill-per">{{android}}%</div>
+              <div class="text-center font-weight-bold">Android(Native)</div>
+              <div class="text-center form-control-sm mb-3">Intermediate, 2 years</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row mt-5">
+    <div class="col-lg-8 col-md-10 mx-auto text-center">
+      <h5 class="text-center mb-5"><span class="blink_me">_</span> in addition <span class="blink_me">_</span></h5>
+      
+      <span class="skill-tag">Asp.Net Core</span>
+      <span class="skill-tag">Entity Framework</span>
+      <span class="skill-tag">Angular</span>
+      <span class="skill-tag">AngularJs</span>
+      <span class="skill-tag">Typescript</span>
+      <span class="skill-tag">Trello</span>
+      <span class="skill-tag">Jira</span>
+      <span class="skill-tag">Git</span>
+      <span class="skill-tag">LINQ</span>
+      <span class="skill-tag">Design Patterns</span>
+      <span class="skill-tag">SQL Server</span>
+      <span class="skill-tag">MongoDB</span>
+      <span class="skill-tag">Xamarin</span>
+      <span class="skill-tag">HTML5</span>
+      <span class="skill-tag">Bootstrap</span>
+      <span class="skill-tag">Hapi</span>
+      <span class="skill-tag">JQuery</span>
+      <span class="skill-tag">Onion Architecture</span>
+      <span class="skill-tag">n-tier</span>
+      <span class="skill-tag">3-tier</span>
+    </div>
+  </div>
+
 </div>
+        
+<!-- <div class="post-preview">
+  <h2 class="post-title"> &gt; Technical skills <span class="blink_me">_</span></h2>
+  <p>I love to drink tea but i drink coffee sometimes...<br />
+    I do travel a lot when i'm free...<br />
+    I quit smoking... started vaping...<br />
+    I like hills...<br />
+    I like nights...<br />
+    I drink beer... <br />
+    I like riding bikes...<br />
+    I like "Real Book" (not facebook), but i have one...<br />
+    I see the world with my own lens (not with some camera lens)...</p>
+</div> -->
+<!-- <hr> -->
+
+<!-- <div class="post-preview">
+  <h2 class="post-title"> &gt; my focus <span class="blink_me">_</span></h2>
+  <span class="caption text-muted">As a preface, I'm still learning and will be...</span>
+  <p>I've always looking for the opportunities and challenges that are meaningful to me. As a software engineer,
+    I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven
+    work ethic to literally change the world.
+    As a software engineer I work both on web and mobile platforms. Usually specialized in web and android
+    development. Spend the last 4 years for developing
+    skills in ASP.NET, Angularjs and Javascript. Concurrently for the last 2 years developing android applications
+    using Java and have some previous experience
+    on Xamarin.
+  </p>
+</div> -->
+
+

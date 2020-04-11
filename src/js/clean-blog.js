@@ -1,5 +1,7 @@
 (function($) {
   "use strict"; // Start of use strict
+  
+  // baguetteBox.run('.cards-gallery', { animation: 'slideIn'});
 
   // Floating label headings for the contact form
   $("body").on("input propertychange", ".floating-label-form-group", function(e) {

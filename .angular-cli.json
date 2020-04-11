@@ -26,8 +26,9 @@
 
         "style/clean-blog.css",
         "style/noise.css",
+        "style/baguetteBox.css",
+        "style/cards-gallery.css",
         "style/style.css",
-
 
         "../node_modules/ladda/dist/ladda-themeless.min.css",
         "../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
@@ -36,7 +37,7 @@
         "js/jquery-3.1.1.min.js",
         "js/bootstrap.min.js",
         "js/plugins/jasny/jasny-bootstrap.min.js",
-
+        "js/baguetteBox.js",
         "js/clean-blog.js"
       ],
       "environmentSource": "environments/environment.ts",

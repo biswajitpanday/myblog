@@ -4,8 +4,18 @@ import { Component, OnInit } from '@angular/core';
     templateUrl: './dashboard.component.html'
 })
 export class DashboardComponent implements OnInit {
-    constructor() { }
+    dotnet: any;
+    javascript: any;
+    nodejs: any;
+    android: any;
+
+    constructor() {
+    }
 
     ngOnInit() {
+        this.dotnet = 80;
+        this.javascript = 95;
+        this.nodejs = 70;
+        this.android = 60;
     }
 }

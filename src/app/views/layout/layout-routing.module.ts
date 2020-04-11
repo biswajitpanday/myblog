@@ -9,6 +9,7 @@ const routes: Routes = [
         children: [
             { path: RouteConstant.Dashboard, loadChildren: '../dashboard/dashboard.module#DashboardModule' },
             { path: RouteConstant.About, loadChildren: '../about/about.module#AboutModule' },
+            { path: RouteConstant.Timeline, loadChildren: '../timeline/timeline.module#TimelineModule' },
             { path: RouteConstant.Contact, loadChildren: '../contact/contact.module#ContactModule' },
             { path: RouteConstant.Tours, loadChildren: '../tours/tours.module#ToursModule' },
             { path: RouteConstant.User, loadChildren: '../user/user.module#UserModule' }

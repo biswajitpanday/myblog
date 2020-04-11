@@ -4,11 +4,13 @@ import { RouterModule } from '@angular/router';
 
 import { DasboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
+import {RoundProgressModule} from 'angular-svg-round-progressbar';
 
 @NgModule({
   imports: [
     CommonModule,
-    DasboardRoutingModule
+    DasboardRoutingModule,
+    RoundProgressModule
   ],
   declarations: [DashboardComponent]
 })
