@@ -5,4 +5,5 @@ export class RouteConstant {
     static Timeline = 'timeline';
     static Contact = 'contact';
     static Tours = 'tours';
+    static TourDetails = 'tourdetails';
 }
