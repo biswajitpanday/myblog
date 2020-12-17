@@ -12,7 +12,7 @@ const routes: Routes = [
             { path: RouteConstant.Timeline, loadChildren: '../timeline/timeline.module#TimelineModule' },
             { path: RouteConstant.Contact, loadChildren: '../contact/contact.module#ContactModule' },
             { path: RouteConstant.Tours, loadChildren: '../tours/tours.module#ToursModule' },
-            { path: RouteConstant.User, loadChildren: '../user/user.module#UserModule' }
+            { path: RouteConstant.User, loadChildren: '../user/user.module#UserModule' },
             { path: RouteConstant.TourDetails, loadChildren: '../tour-details/tour-details.module#TourDetailsModule' }
         ]
     }
