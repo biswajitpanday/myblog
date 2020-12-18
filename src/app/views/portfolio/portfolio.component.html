@@ -1,3 +1,37 @@
-<p>
-  portfolio works!
-</p>
+<header class="masthead" style="background-image: url('/assets/img/timeline_cover.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <span class="subheading">Portfolio Projects</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="post-preview">
+        <h2 class="post-title"> &gt; portfolio <span class="blink_me">_</span></h2>
+
+        <div class="row">
+          <div class="col-md-3 mt-5" *ngFor="let portfolio of portfolioList; let i = index">
+            <div class="card text-center">
+              <img class="card-img-top" [src]="portfolio.image || defaultImage" alt={{portfolio.title}}>
+              <div class="card-body" id="card">
+                <h6 class="card-title">{{portfolio.title}}</h6>
+              </div>
+              <!-- <div class="card-footer text-muted">
+                
+              </div> -->
+            </div>
+          </div>
+        </div>
+            
+      </div>
+    </div>
+  </div>
+</div>
