@@ -8,7 +8,7 @@ import { Observable} from 'rxjs';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,

@@ -10,7 +10,7 @@ const routes: Routes = [
             { path: RouteConstant.Dashboard, loadChildren: '../dashboard/dashboard.module#DashboardModule' },
             { path: RouteConstant.About, loadChildren: '../about/about.module#AboutModule' },
             { path: RouteConstant.Timeline, loadChildren: '../timeline/timeline.module#TimelineModule' },
-            { path: RouteConstant.Contact, loadChildren: '../contact/contact.module#ContactModule' },
+            { path: RouteConstant.Portfolio, loadChildren: '../portfolio/portfolio.module#PortfolioModule' },
             { path: RouteConstant.Tours, loadChildren: '../tours/tours.module#ToursModule' },
             { path: RouteConstant.User, loadChildren: '../user/user.module#UserModule' },
             { path: RouteConstant.TourDetails, loadChildren: '../tour-details/tour-details.module#TourDetailsModule' }

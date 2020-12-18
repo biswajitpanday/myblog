@@ -3,7 +3,7 @@ export class RouteConstant {
     static Dashboard = 'dashboard';
     static About = 'about';
     static Timeline = 'timeline';
-    static Contact = 'contact';
+    static Portfolio = 'portfolio';
     static Tours = 'tours';
     static TourDetails = 'tourdetails';
 }
