@@ -18,7 +18,7 @@
         <h2 class="post-title"> &gt; portfolio <span class="blink_me">_</span></h2>
 
         <div class="row">
-          <div class="col-md-3 mt-5" *ngFor="let portfolio of portfolioList">
+          <div class="col-md-3 col-sm-6 mt-5" *ngFor="let portfolio of portfolioList">
             <div class="card text-center" (click)="goToLink(portfolio.siteLink)">
               <img class="card-img-top" [src]="portfolio.image || defaultImage" alt={{portfolio.title}}>
               <div class="card-body border-top" id="card">
