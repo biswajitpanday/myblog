@@ -135,12 +135,12 @@
     <div class="col-lg-8 col-md-10 mx-auto text-center">
       <h5 class="text-center mb-5"><span class="blink_me">_</span> in addition <span class="blink_me">_</span></h5>
       
-      <span class="skill-tag">C#</span>
-      <span class="skill-tag">.NET Core</span>
+      <span class="skill-tag" *ngFor="let skill of otherSkills;">{{skill}}</span>
+      <!-- <span class="skill-tag">ASP.NET Core</span>
       <span class="skill-tag">ASP.NET MVC</span>
       <span class="skill-tag">ASP.NET Web API</span>
       <span class="skill-tag">Entity Framework</span>
-      <span class="skill-tag">MS SQL Server</span>
+      <span class="skill-tag">MSSQL Server</span>
       <span class="skill-tag">Oracle</span>
       <span class="skill-tag">LINQ</span>
       <span class="skill-tag">Log4Net</span>
@@ -173,7 +173,7 @@
       <span class="skill-tag">Microservices</span>
       <span class="skill-tag">Onion Architecture</span>
       <span class="skill-tag">n-tier</span>
-      <span class="skill-tag">3-tier</span>
+      <span class="skill-tag">3-tier</span> -->
     </div>
   </div>
 
