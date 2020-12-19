@@ -38,10 +38,11 @@
         <h2 class="post-title"> &gt; professional skills <span class="blink_me">_</span></h2>
 
         <div class="row mt-5">
-          <div class="col-lg-3 col-md-6">
+          
+          <div *ngFor="let skill of professionalSkills;" [ngClass]="skill.col">
             <div class="row justify-content-center align-items-center">
               <round-progress
-                [current]="dotnet"
+                [current]="skill.levelPercentage"
                 [max]=100
                 [color]="'#363636'"
                 [background]="'#eaeaea'"
@@ -55,77 +56,11 @@
                 [animation]="'easeInOutQuart'"
                 [animationDelay]="0"></round-progress>
               </div>
-              <div class="text-center skill-per">{{dotnet}}%</div>
-              <div class="text-center font-weight-bold">.Net(C#), MVC &amp; Web Api</div>
-              <div class="text-center form-control-sm mb-3">Advance, 3 years</div>
+              <div class="text-center skill-per">{{skill.levelPercentage}}%</div>
+              <div class="text-center font-weight-bold">{{skill.stack}}</div>
+              <div class="text-center form-control-sm mb-3">{{skill.expertiseLabel}}, {{skill.yearsOfExperience}} years</div>
           </div>
           
-          <div class="col-lg-3 col-md-6">
-            <div class="row justify-content-center align-items-center">
-              <round-progress
-                [current]="javascript"
-                [max]=100
-                [color]="'#363636'"
-                [background]="'#eaeaea'"
-                [radius]="80"
-                [stroke]="10"
-                [semicircle]="false"
-                [rounded]="true"
-                [clockwise]="true"
-                [responsive]="false"
-                [duration]="800"
-                [animation]="'easeInOutQuart'"
-                [animationDelay]="0"></round-progress>
-              </div>
-              <div class="text-center skill-per">{{javascript}}%</div>
-              <div class="text-center font-weight-bold">JavaScript</div>
-              <div class="text-center form-control-sm mb-3">Expert, 5 years</div>
-
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="row justify-content-center align-items-center">
-              <round-progress
-                [current]="nodejs"
-                [max]=100
-                [color]="'#363636'"
-                [background]="'#eaeaea'"
-                [radius]="80"
-                [stroke]="10"
-                [semicircle]="false"
-                [rounded]="true"
-                [clockwise]="true"
-                [responsive]="false"
-                [duration]="800"
-                [animation]="'easeInOutQuart'"
-                [animationDelay]="0"></round-progress>
-              </div>
-              <div class="text-center skill-per">{{nodejs}}%</div>
-              <div class="text-center font-weight-bold">NodeJs</div>
-              <div class="text-center form-control-sm mb-3">Advance, 2 years</div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="row justify-content-center align-items-center">
-              <round-progress
-                [current]="android"
-                [max]=100
-                [color]="'#363636'"
-                [background]="'#eaeaea'"
-                [radius]="80"
-                [stroke]="10"
-                [semicircle]="false"
-                [rounded]="true"
-                [clockwise]="true"
-                [responsive]="false"
-                [duration]="800"
-                [animation]="'easeInOutQuart'"
-                [animationDelay]="0"></round-progress>
-              </div>
-              <div class="text-center skill-per">{{android}}%</div>
-              <div class="text-center font-weight-bold">Android(Native)</div>
-              <div class="text-center form-control-sm mb-3">Intermediate, 2 years</div>
-          </div>
         </div>
       </div>
     </div>
@@ -134,77 +69,10 @@
   <div class="row mt-5">
     <div class="col-lg-8 col-md-10 mx-auto text-center">
       <h5 class="text-center mb-5"><span class="blink_me">_</span> in addition <span class="blink_me">_</span></h5>
-      
       <span class="skill-tag" *ngFor="let skill of otherSkills;">{{skill}}</span>
-      <!-- <span class="skill-tag">ASP.NET Core</span>
-      <span class="skill-tag">ASP.NET MVC</span>
-      <span class="skill-tag">ASP.NET Web API</span>
-      <span class="skill-tag">Entity Framework</span>
-      <span class="skill-tag">MSSQL Server</span>
-      <span class="skill-tag">Oracle</span>
-      <span class="skill-tag">LINQ</span>
-      <span class="skill-tag">Log4Net</span>
-      <span class="skill-tag">NUnit</span>
-
-      <span class="skill-tag">Node.js</span>
-      <span class="skill-tag">Express.js</span>
-      <span class="skill-tag">Hapi</span>
-      <span class="skill-tag">MongoDB</span>
-      
-      <span class="skill-tag">JavaScript</span>
-      <span class="skill-tag">TypeScript</span>
-      <span class="skill-tag">JQuery</span>
-      <span class="skill-tag">ReactJS</span>
-      <span class="skill-tag">Redux</span>
-      <span class="skill-tag">Angular</span>
-      <span class="skill-tag">AngularJs</span>
-      <span class="skill-tag">Knockout.js</span>
-      <span class="skill-tag">Electron</span>
-      <span class="skill-tag">HTML5</span>
-      <span class="skill-tag">Bootstrap</span>
-
-      <span class="skill-tag">Trello</span>
-      <span class="skill-tag">Jira</span>
-      <span class="skill-tag">Git</span>
-      
-      <span class="skill-tag">Xamarin</span>
-      
-      <span class="skill-tag">Design Patterns</span>
-      <span class="skill-tag">Microservices</span>
-      <span class="skill-tag">Onion Architecture</span>
-      <span class="skill-tag">n-tier</span>
-      <span class="skill-tag">3-tier</span> -->
     </div>
   </div>
 
 </div>
-        
-<!-- <div class="post-preview">
-  <h2 class="post-title"> &gt; Technical skills <span class="blink_me">_</span></h2>
-  <p>I love to drink tea but i drink coffee sometimes...<br />
-    I do travel a lot when i'm free...<br />
-    I quit smoking... started vaping...<br />
-    I like hills...<br />
-    I like nights...<br />
-    I drink beer... <br />
-    I like riding bikes...<br />
-    I like "Real Book" (not facebook), but i have one...<br />
-    I see the world with my own lens (not with some camera lens)...</p>
-</div> -->
-<!-- <hr> -->
-
-<!-- <div class="post-preview">
-  <h2 class="post-title"> &gt; my focus <span class="blink_me">_</span></h2>
-  <span class="caption text-muted">As a preface, I'm still learning and will be...</span>
-  <p>I've always looking for the opportunities and challenges that are meaningful to me. As a software engineer,
-    I enjoy using my obsessive attention to detail, my unequivocal love for making things, and my mission-driven
-    work ethic to literally change the world.
-    As a software engineer I work both on web and mobile platforms. Usually specialized in web and android
-    development. Spend the last 4 years for developing
-    skills in ASP.NET, Angularjs and Javascript. Concurrently for the last 2 years developing android applications
-    using Java and have some previous experience
-    on Xamarin.
-  </p>
-</div> -->
 
 
