@@ -14,7 +14,7 @@ export class DashboardComponent implements OnInit {
 
     ngOnInit() {
         this.dotnet = 80;
-        this.javascript = 95;
+        this.javascript = 90;
         this.nodejs = 70;
         this.android = 60;
     }
