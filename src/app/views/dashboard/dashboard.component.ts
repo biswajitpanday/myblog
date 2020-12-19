@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import moment = require('moment');
+
 @Component({
     selector: 'app-dashboard',
     templateUrl: './dashboard.component.html'
@@ -28,35 +30,35 @@ export class DashboardComponent implements OnInit {
         this.professionalSkills = [
             {
                 stack: ".NET (C#)",
-                yearsOfExperience: 5,
+                yearsOfExperience: moment().diff('2015-06-01', 'years'),
                 expertiseLabel: "Expert",
                 levelPercentage: 90,
                 col: "col-2"
             },
             {
                 stack: "ASP.NET",
-                yearsOfExperience: 5,
+                yearsOfExperience: moment().diff('2015-06-01', 'years'),
                 expertiseLabel: "Expert",
                 levelPercentage: 85,
                 col: "col-2"
             },
             {
                 stack: ".NET Core & ASP.Net Core",
-                yearsOfExperience: 2,
+                yearsOfExperience: moment().diff('2018-01-01', 'years'),
                 expertiseLabel: "Expert",
                 levelPercentage: 80,
                 col: "col-4"
             },
             {
                 stack: "JavaScript",
-                yearsOfExperience: 5,
+                yearsOfExperience: moment().diff('2015-06-01', 'years'),
                 expertiseLabel: "Expert",
                 levelPercentage: 90,
                 col: "col-2"
             },
             {
                 stack: "Node.js",
-                yearsOfExperience: 3,
+                yearsOfExperience: moment().diff('2017-02-01', 'years'),
                 expertiseLabel: "Intermediate",
                 levelPercentage: 80,
                 col: "col-2"
