@@ -13,11 +13,12 @@ export class PortfolioComponent implements OnInit {
 
   ngOnInit() {
     this.getPortfolio();
-    this.defaultImage = "../../../assets/img/default-thumbnail.jpg"
+    this.defaultImage = "../../../assets/img/portfolio/default-portfolio.jpg"
   }
 
   goToLink(url: string) {
-    window.open(url, "_blank");
+    if(url != "")
+      window.open(url, "_blank");
   }
 
   getPortfolio() {
@@ -26,7 +27,7 @@ export class PortfolioComponent implements OnInit {
         title: "Subscriber Verification System (SVS)",
         technologies: ["C#", "ASP.NET Core 2.2", "JavaScript", "JQuery", "Oracle"],
         description: "",
-        image: "",
+        image: "../../../assets/img/portfolio/robi.png",
         shortDescription: "",
         siteLink: "https://svsweb.robi.com.bd/",
         employer: "KAZ Software",
@@ -39,7 +40,7 @@ export class PortfolioComponent implements OnInit {
         title: "JoyList",
         technologies: ["Node.js", "React", "MongoDb", "AWS EC2", "AWS S3", "AWS Cloud Formation"],
         description: "",
-        image: "",
+        image: "../../../assets/img/portfolio/joilist.png",
         shortDescription: "",
         siteLink: "https://www.joylist.io/",
         employer: "KAZ Software",
@@ -49,38 +50,12 @@ export class PortfolioComponent implements OnInit {
         ends: new Date()
       },
       {
-        title: "Shopway",
-        technologies: ["Node.js", "Angular 7", "MongoDb", "AWS EC2", "AWS S3", "AWS EBS"],
-        description: "",
-        image: "",
-        shortDescription: "",
-        siteLink: "",
-        employer: "Independent",
-        companyName: "Shopway",
-        companyLocation: "Dhaka, Bangladesh",
-        started: new Date(),
-        ends: new Date()
-      },
-      {
-        title: "OpiGateWay",
-        technologies: ["C#", "ASP.NET Web API", "Angular.Js", "MongoDb", "Entity Framework", "Electron", "Twilio Voice"],
-        description: "",
-        image: "",
-        shortDescription: "",
-        siteLink: "",
-        employer: "KAZ Software",
-        companyName: "VRI Gateway",
-        companyLocation: "",
-        started: new Date(),
-        ends: new Date()
-      },
-      {
         title: "DairyApplication",
         technologies: ["C#", "ASP.NET Web API", "Angular.Js", "SQL Server", "MongoDb", "Entity Framework", "AWS EC2", "AWS S3"],
         description: "",
-        image: "",
+        image: "../../../assets/img/portfolio/dairyApplications.png",
         shortDescription: "",
-        siteLink: "",
+        siteLink: "https://www.dairyapplications.com/",
         employer: "KAZ Software",
         companyName: "Tmr Feeding",
         companyLocation: "Netherlands",
@@ -88,12 +63,51 @@ export class PortfolioComponent implements OnInit {
         ends: new Date()
       },
       {
+        title: "EnCue",
+        technologies: ["C#", "ASP.NET Web API 2", "Angular.Js", "Entity Framework", "SQL Server", "AWS EC2", "AWS S3", "Xamarin"],
+        description: "",
+        image: "../../../assets/img/portfolio/encue.png",
+        shortDescription: "",
+        siteLink: "https://www.encuebyoctava.com/",
+        employer: "KAZ Software",
+        companyName: "EnCue",
+        companyLocation: "",
+        started: new Date(),
+        ends: new Date()
+      },
+      {
+        title: "OpiGateWay",
+        technologies: ["C#", "ASP.NET Web API", "Angular.Js", "MongoDb", "Entity Framework", "Electron", "Twilio Voice"],
+        description: "",
+        image: "../../../assets/img/portfolio/opiGateWay.png",
+        shortDescription: "",
+        siteLink: "https://opi.vrigateway.com/",
+        employer: "KAZ Software",
+        companyName: "VRI Gateway",
+        companyLocation: "",
+        started: new Date(),
+        ends: new Date()
+      },
+      {
+        title: "Shopway",
+        technologies: ["Node.js", "Angular 7", "MongoDb", "AWS EC2", "AWS S3", "AWS EBS"],
+        description: "",
+        image: "../../../assets/img/portfolio/shopway.png",
+        shortDescription: "",
+        siteLink: "https://apps.apple.com/us/app/shopwaybd/id1462448277/",
+        employer: "Independent",
+        companyName: "Shopway",
+        companyLocation: "Dhaka, Bangladesh",
+        started: new Date(),
+        ends: new Date()
+      },
+      {
         title: "here'n'now",
         technologies: ["C#", "ASP.NET Web API", "Angular.Js", "SQL Server", "Xamarin", "Entity Framework", "Firebase"],
         description: "",
-        image: "",
+        image: "../../../assets/img/portfolio/hnn.png",
         shortDescription: "",
-        siteLink: "",
+        siteLink: "https://play.google.com/store/apps/details?id=com.hnnapp.android",
         employer: "KAZ Software",
         companyName: "here'n'now",
         companyLocation: "",
@@ -104,9 +118,9 @@ export class PortfolioComponent implements OnInit {
         title: "reezcom",
         technologies: ["C#" ,"ASP.NET Core", "Android", "Entity Framework Core", "SQL Server"],
         description: "",
-        image: "",
+        image: "../../../assets/img/portfolio/reezcom.png",
         shortDescription: "",
-        siteLink: "",
+        siteLink: "https://play.google.com/store/apps/details?id=com.reezcom.android",
         employer: "Independent",
         companyName: "reezcom",
         companyLocation: "Dhaka, Bangladesh",
@@ -117,7 +131,7 @@ export class PortfolioComponent implements OnInit {
         title: "dobi",
         technologies: ["C#" ,"ASP.NET Core", "Angular.Js", "Entity Framework", "SQL Server"],
         description: "",
-        image: "",
+        image: "../../../assets/img/portfolio/dobi.png",
         shortDescription: "",
         siteLink: "",
         employer: "Independent",
@@ -127,25 +141,12 @@ export class PortfolioComponent implements OnInit {
         ends: new Date()
       },
       {
-        title: "EnCue",
-        technologies: ["C#", "ASP.NET Web API 2", "Angular.Js", "Entity Framework", "SQL Server", "AWS EC2", "AWS S3", "Xamarin"],
-        description: "",
-        image: "",
-        shortDescription: "",
-        siteLink: "",
-        employer: "KAZ Software",
-        companyName: "EnCue",
-        companyLocation: "",
-        started: new Date(),
-        ends: new Date()
-      },
-      {
         title: "World Tax Analyzer (WTA)",
         technologies: ["C#", "ASP.NET MVC", "Knockout.Js", "SQL Server", "Link To SQL"],
         description: "",
-        image: "",
+        image: "../../../assets/img/portfolio/regfollower.png",
         shortDescription: "",
-        siteLink: "",
+        siteLink: "https://www.worldtaxanalyser.com/",
         employer: "KAZ Software",
         companyName: "Reganalytics",
         companyLocation: "",
@@ -156,7 +157,7 @@ export class PortfolioComponent implements OnInit {
         title: "Transfer Pricing Analyzer (TPA)",
         technologies: ["C#", "ASP.NET MVC", "Knockout.Js", "SQL Server", "Link To SQL"],
         description: "",
-        image: "",
+        image: "../../../assets/img/portfolio/regfollower.png",
         shortDescription: "",
         siteLink: "",
         employer: "KAZ Software",

@@ -21,8 +21,8 @@
           <div class="col-md-3 mt-5" *ngFor="let portfolio of portfolioList">
             <div class="card text-center" (click)="goToLink(portfolio.siteLink)">
               <img class="card-img-top" [src]="portfolio.image || defaultImage" alt={{portfolio.title}}>
-              <div class="card-body" id="card">
-                <h6 class="card-title">{{portfolio.title}}</h6>
+              <div class="card-body border-top" id="card">
+                <h6 class="card-subtitle">{{portfolio.title}}</h6>
                 <p>{{portfolio.shortDescription}}</p>
               </div>
               <div class="card-footer text-muted" title="Technology Used">
