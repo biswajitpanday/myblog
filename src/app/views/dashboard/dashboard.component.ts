@@ -4,10 +4,6 @@ import { Component, OnInit } from '@angular/core';
     templateUrl: './dashboard.component.html'
 })
 export class DashboardComponent implements OnInit {
-    dotnet: any;
-    javascript: any;
-    nodejs: any;
-    android: any;
     professionalSkills: IProfessionalSkills[];
     otherSkills: string[];
 
@@ -17,15 +13,11 @@ export class DashboardComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.dotnet = 80;
-        this.javascript = 90;
-        this.nodejs = 70;
-        this.android = 60;
-        this.getSkills();
+        this.getOtherSkills();
         this.getProfessionalSkills();
     }
 
-    getSkills () {
+    getOtherSkills () {
         this.otherSkills = ["C#", "ASP.NET Core", "ASP.NET MVC", "ASP.NET Web API 2", "Entity Framework", "MS SQL Server", 
         "Oracle", "LINQ", "Log4Net", "NUnit", "Node.js", "Express.js", "Hapi", "MongoDB", "JavaScript", "TypeScript", 
         "JQuery", "ReactJS", "Redux", "Angular", "Angular.js", "Electron", "HTML5", "Bootstrap", "Trello", "Jira", "Git", "Redis",
