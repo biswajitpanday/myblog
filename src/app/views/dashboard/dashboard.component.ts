@@ -33,35 +33,35 @@ export class DashboardComponent implements OnInit {
                 yearsOfExperience: moment().diff('2015-06-01', 'years'),
                 expertiseLabel: "Expert",
                 levelPercentage: 90,
-                col: "col-2"
+                col: "col-md-2 col-sm-6"
             },
             {
                 stack: "ASP.NET",
                 yearsOfExperience: moment().diff('2015-06-01', 'years'),
                 expertiseLabel: "Expert",
                 levelPercentage: 85,
-                col: "col-2"
+                col: "col-md-2 col-sm-6"
             },
             {
                 stack: ".NET Core & ASP.Net Core",
                 yearsOfExperience: moment().diff('2018-01-01', 'years'),
                 expertiseLabel: "Expert",
                 levelPercentage: 80,
-                col: "col-4"
+                col: "col-md-4 col-sm-12"
             },
             {
                 stack: "JavaScript",
                 yearsOfExperience: moment().diff('2015-06-01', 'years'),
                 expertiseLabel: "Expert",
                 levelPercentage: 90,
-                col: "col-2"
+                col: "col-md-2 col-sm-6"
             },
             {
                 stack: "Node.js",
                 yearsOfExperience: moment().diff('2017-02-01', 'years'),
                 expertiseLabel: "Intermediate",
                 levelPercentage: 80,
-                col: "col-2"
+                col: "col-md-2 col-sm-6"
             }
         ]
     }
