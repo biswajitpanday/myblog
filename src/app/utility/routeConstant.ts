@@ -1,6 +1,6 @@
 export class RouteConstant {
     static User = 'user';
-    static Dashboard = 'dashboard';
+    static Dashboard = '';
     static About = 'about';
     static Timeline = 'timeline';
     static Portfolio = 'portfolio';
