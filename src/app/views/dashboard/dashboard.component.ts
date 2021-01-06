@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import moment = require('moment');
+import * as moment from "moment";
+//import moment = require('moment');
 
 @Component({
     selector: 'app-dashboard',
@@ -44,7 +45,7 @@ export class DashboardComponent implements OnInit {
             },
             {
                 stack: ".NET Core & ASP.Net Core",
-                yearsOfExperience: moment().diff('2018-01-01', 'years'),
+                yearsOfExperience: moment().diff('2019-01-01', 'years'),
                 expertiseLabel: "Expert",
                 levelPercentage: 80,
                 col: "col-md-4 col-sm-12"
