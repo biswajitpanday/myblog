@@ -33,7 +33,7 @@ export class PortfolioComponent implements OnInit {
         employer: "KAZ Software",
         companyName: "Robi",
         companyLocation: "Dhaka, Bangladesh",
-        started: new Date(),
+        started: new Date("2020/05/01"),
         ends: new Date()
       },
       {

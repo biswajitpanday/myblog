@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import 'hammerjs';
+import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
+import { AppConstant } from '../../utility/appConstant';
 
 @Component({
   selector: 'app-tour-details',
@@ -7,12 +10,98 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class TourDetailsComponent implements OnInit {
 
+  galleryOptions: NgxGalleryOptions[];
+  galleryImages: NgxGalleryImage[];
+  tourDetailList: ITourDetails[];
+  selectedCountryCode: null;
+
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.route.params.subscribe(params => {
-      console.log(params);
+    this.route.queryParams.subscribe(queryParams => {
+      this.selectedCountryCode = queryParams.countryCode;
     });
+
+    this.getTourDetails();
+    this.setGalleryOptions();
+    this.setGalleryImages();
   }
 
+  setGalleryOptions() {
+    this.galleryOptions = [
+      {
+          width: '100%',
+          height: '200px',
+          preview: true,
+          image: false,
+          thumbnailsColumns: 4,
+          imageAnimation: NgxGalleryAnimation.Fade,
+          thumbnails: true,
+          previewZoom: true
+      }
+    ];
+  }
+
+  setGalleryImages() {
+    let temp = [];
+    this.tourDetailList.forEach(element => {
+      var img = this.configureImageForGallery(element);
+      if(img != null)
+        temp.push(img);
+    });
+    this.galleryImages = temp;
+  }
+
+  configureImageForGallery(obj: ITourDetails) {
+    if(obj.countryCode !== this.selectedCountryCode) 
+      return null;
+    return {
+      small: `../../../assets/img/tours/${obj.countryName}/small/${obj.image}`,
+      medium: `../../../assets/img/tours/${obj.countryName}/medium/${obj.image}`,
+      big: `../../../assets/img/tours/${obj.countryName}/big/${obj.image}`
+    }
+  }
+
+  getTourDetails() {
+    this.tourDetailList = [
+      {
+        countryName: AppConstant.bangladesh,
+        countryCode: AppConstant.bangladeshCC,
+        image: "saintmartin01.jpg",
+        description: "",
+        year: ""
+      },
+      {
+        countryName: AppConstant.india,
+        countryCode: AppConstant.indiaCC,
+        image: "pangong01.jpg",
+        description: "",
+        year: ""
+      },
+      {
+        countryName: AppConstant.thailand,
+        countryCode: AppConstant.thailandCC,
+        image: "thailand01.jpg",
+        description: "",
+        year: ""
+      },
+      {
+        countryName: AppConstant.thailand,
+        countryCode: AppConstant.thailandCC,
+        image: "thailand02.jpg",
+        description: "",
+        year: ""
+      }
+
+    ]
+  }
+}
+
+
+export interface ITourDetails {
+  countryName: string,
+  countryCode: string,
+  image: string,
+  description: string,
+  year: string
 }

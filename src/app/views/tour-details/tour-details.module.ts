@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { TourDetailsRoutingModule } from './tour-details-routing.module';
 import { TourDetailsComponent } from './tour-details.component';
+import { NgxGalleryModule } from 'ngx-gallery';
 
 @NgModule({
   imports: [
     CommonModule,
-    TourDetailsRoutingModule
+    TourDetailsRoutingModule,
+    NgxGalleryModule
   ],
   declarations: [TourDetailsComponent]
 })
