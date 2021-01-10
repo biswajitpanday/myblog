@@ -58,7 +58,8 @@ export class TourDetailsComponent implements OnInit {
     return {
       small: `../../../assets/img/tours/${obj.countryName}/small/${obj.image}`,
       medium: `../../../assets/img/tours/${obj.countryName}/medium/${obj.image}`,
-      big: `../../../assets/img/tours/${obj.countryName}/big/${obj.image}`
+      big: `../../../assets/img/tours/${obj.countryName}/big/${obj.image}`,
+      description: obj.description
     }
   }
 
@@ -68,14 +69,14 @@ export class TourDetailsComponent implements OnInit {
         countryName: AppConstant.bangladesh,
         countryCode: AppConstant.bangladeshCC,
         image: "saintmartin01.jpg",
-        description: "",
+        description: "SaintMartin Island, Cox's Bazar, Bangladesh",
         year: ""
       },
       {
         countryName: AppConstant.india,
         countryCode: AppConstant.indiaCC,
         image: "pangong01.jpg",
-        description: "",
+        description: "Pangong Lake, Ladakh, India",
         year: ""
       },
       {
