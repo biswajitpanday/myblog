@@ -73,6 +73,41 @@ export class TourDetailsComponent implements OnInit {
         year: ""
       },
       {
+        countryName: AppConstant.bangladesh,
+        countryCode: AppConstant.bangladeshCC,
+        image: "moheskhali01.jpg",
+        description: "Moheskhali Terminal, Cox's Bazar, Bangladesh",
+        year: ""
+      },
+      {
+        countryName: AppConstant.bangladesh,
+        countryCode: AppConstant.bangladeshCC,
+        image: "saintmartin01.jpg",
+        description: "SaintMartin Island, Cox's Bazar, Bangladesh",
+        year: ""
+      },
+      {
+        countryName: AppConstant.bangladesh,
+        countryCode: AppConstant.bangladeshCC,
+        image: "saintmartin01.jpg",
+        description: "SaintMartin Island, Cox's Bazar, Bangladesh",
+        year: ""
+      },
+      {
+        countryName: AppConstant.bangladesh,
+        countryCode: AppConstant.bangladeshCC,
+        image: "saintmartin01.jpg",
+        description: "SaintMartin Island, Cox's Bazar, Bangladesh",
+        year: ""
+      },
+      {
+        countryName: AppConstant.bangladesh,
+        countryCode: AppConstant.bangladeshCC,
+        image: "saintmartin01.jpg",
+        description: "SaintMartin Island, Cox's Bazar, Bangladesh",
+        year: ""
+      },
+      {
         countryName: AppConstant.india,
         countryCode: AppConstant.indiaCC,
         image: "pangong01.jpg",
@@ -90,6 +125,48 @@ export class TourDetailsComponent implements OnInit {
         countryName: AppConstant.thailand,
         countryCode: AppConstant.thailandCC,
         image: "thailand02.jpg",
+        description: "",
+        year: ""
+      },
+      {
+        countryName: AppConstant.thailand,
+        countryCode: AppConstant.thailandCC,
+        image: "thailand03.jpg",
+        description: "",
+        year: ""
+      },
+      {
+        countryName: AppConstant.thailand,
+        countryCode: AppConstant.thailandCC,
+        image: "thailand04.jpg",
+        description: "",
+        year: ""
+      },
+      {
+        countryName: AppConstant.thailand,
+        countryCode: AppConstant.thailandCC,
+        image: "thailand05.jpg",
+        description: "",
+        year: ""
+      },
+      {
+        countryName: AppConstant.thailand,
+        countryCode: AppConstant.thailandCC,
+        image: "thailand06.jpg",
+        description: "",
+        year: ""
+      },
+      {
+        countryName: AppConstant.thailand,
+        countryCode: AppConstant.thailandCC,
+        image: "thailand07.jpg",
+        description: "",
+        year: ""
+      },
+      {
+        countryName: AppConstant.thailand,
+        countryCode: AppConstant.thailandCC,
+        image: "thailand08.jpg",
         description: "",
         year: ""
       }
