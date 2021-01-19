@@ -82,29 +82,15 @@ export class TourDetailsComponent implements OnInit {
       {
         countryName: AppConstant.bangladesh,
         countryCode: AppConstant.bangladeshCC,
-        image: "saintmartin01.jpg",
-        description: "SaintMartin Island, Cox's Bazar, Bangladesh",
+        image: "bogalake01.jpg",
+        description: "Boga Lake, Bandarban, Bangladesh",
         year: ""
       },
       {
         countryName: AppConstant.bangladesh,
         countryCode: AppConstant.bangladeshCC,
-        image: "saintmartin01.jpg",
-        description: "SaintMartin Island, Cox's Bazar, Bangladesh",
-        year: ""
-      },
-      {
-        countryName: AppConstant.bangladesh,
-        countryCode: AppConstant.bangladeshCC,
-        image: "saintmartin01.jpg",
-        description: "SaintMartin Island, Cox's Bazar, Bangladesh",
-        year: ""
-      },
-      {
-        countryName: AppConstant.bangladesh,
-        countryCode: AppConstant.bangladeshCC,
-        image: "saintmartin01.jpg",
-        description: "SaintMartin Island, Cox's Bazar, Bangladesh",
+        image: "sajekvalley01.jpg",
+        description: "Sajek Valley, Khagrachari, Bangladesh",
         year: ""
       },
       {
