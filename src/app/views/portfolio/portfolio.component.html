@@ -11,7 +11,7 @@
   </div>
 </header>
 
-<div class="container-fluid">
+<div class="container-fluid portfolio-container">
   <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
       <div class="post-preview">
@@ -19,19 +19,20 @@
 
         <div class="row">
           <div class="col-md-3 col-sm-6 mt-5" *ngFor="let portfolio of portfolioList">
-            <div class="card text-center" (click)="goToLink(portfolio.siteLink)">
+            <div class="card text-center" (click)="goToLink(portfolio.siteLink)" [title]="portfolio.shortDescription">
               <img class="card-img-top" [src]="portfolio.image || defaultImage" alt={{portfolio.title}}>
-              <div class="card-body border-top" id="card">
+              <div class="card-body border-top" id="">
                 <h6 class="card-subtitle">{{portfolio.title}}</h6>
-                <p>{{portfolio.shortDescription}}</p>
+                <!-- <small class="portfolio-description">{{portfolio.description}}</small> -->
               </div>
               <div class="card-footer text-muted" title="Technology Used">
                 <span class="badge badge-dark tech-badge" *ngFor="let tech of portfolio.technologies;">{{tech}}</span>
               </div>
             </div>
+            <span class="employer-tag">{{portfolio.employer}}</span>
           </div>
         </div>
-            
+
       </div>
     </div>
   </div>

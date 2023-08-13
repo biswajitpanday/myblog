@@ -17,12 +17,77 @@ export class PortfolioComponent implements OnInit {
   }
 
   goToLink(url: string) {
-    if(url != "")
+    if (url != "")
       window.open(url, "_blank");
   }
 
   getPortfolio() {
     this.portfolioList = [
+      {
+        title: "Optimizely B2B Commerce",
+        technologies: ["C#", "ASP.NET", "MSSQL", "LINQ", "TypeScript", "Angular", "React", "WCF", "Node.js", "IIS"],
+        description: "",
+        image: "../../../assets/img/portfolio/optimizely.png",
+        shortDescription: "Online sale of goods or services between businesses",
+        siteLink: "https://www.optimizely.com/optimization-glossary/b2b-ecommerce/",
+        employer: "Optimizely",
+        companyName: "Optimizely",
+        companyLocation: "Dhaka, Bangladesh",
+        started: new Date("2023/04/01"),
+        ends: new Date()
+      },
+      {
+        title: "M&A Software",
+        technologies: ["C#", "ASP.NET", ".NET MVC", "MSSQL", "LINQ", "TypeScript", "Angular", "Azure"],
+        description: "Simplify complex mergers and acquisitions (M&A) with streamlined workflows to improve collaboration, increase the success rate, and gain better visibility into the entire deal lifecycle.",
+        image: "../../../assets/img/portfolio/devensoft.png",
+        shortDescription: "Elevate team with full-cycle M&A software",
+        siteLink: "https://www.devensoft.com/",
+        employer: "KAZ Software",
+        companyName: "Devensoft",
+        companyLocation: "USA",
+        started: new Date("2022/02/01"),
+        ends: new Date()
+      },
+      {
+        title: "Reganalytics",
+        technologies: ["C#", ".NET 6", "Web API", "MSSQL", "TypeScript", "React", "Angular", "Aws", "Microservices", "Docker"],
+        description: "Reganalytics is a company that provides software and services to help businesses comply with global trade, transfer pricing, and tax regulations",
+        image: "../../../assets/img/portfolio/reganalytics.png",
+        shortDescription: "Global trade, transfer pricing & tax regulations",
+        siteLink: "http://www.reganalytics.com/",
+        employer: "KAZ Software",
+        companyName: "Reganalytics",
+        companyLocation: "Dhaka, Bangladesh",
+        started: new Date("2021/06/01"),
+        ends: new Date()
+      },
+      {
+        title: "webEvv",
+        technologies: ["C#", ".NET Core 3.1", "Web API", "DynamoDB", "TypeScript", "React", "Flutter", "Aws", "Clean Architecture", "Serverless"],
+        description: "",
+        image: "../../../assets/img/portfolio/webevv.png",
+        shortDescription: "The Best EVV Software Solutions",
+        siteLink: "https://www.webevv.com/",
+        employer: "KAZ Software",
+        companyName: "webEvv",
+        companyLocation: "USA",
+        started: new Date("2021/09/01"),
+        ends: new Date()
+      },
+      {
+        title: "Alarm App",
+        technologies: ["C#", "NET 5.0", "Angular", "MySQL", "Android (Java, Kotlin)", "AWS S3", "AWS Lambda", "AWS RDS"],
+        description: "",
+        image: "../../../assets/img/portfolio/alarmApp.png",
+        shortDescription: "",
+        siteLink: "https://play.google.com/store/apps/details?id=alarmapp.bdrcs.org",
+        employer: "KAZ Software",
+        companyName: "Bangladesh Red Crescent Society",
+        companyLocation: "Dhaka, Bangladesh",
+        started: new Date("2021/03/01"),
+        ends: new Date()
+      },
       {
         title: "Subscriber Verification System (SVS)",
         technologies: ["C#", "ASP.NET Core 2.2", "JavaScript", "JQuery", "Oracle"],
@@ -45,7 +110,7 @@ export class PortfolioComponent implements OnInit {
         siteLink: "https://www.joylist.io/",
         employer: "KAZ Software",
         companyName: "JoyList",
-        companyLocation: "",
+        companyLocation: "USA",
         started: new Date(),
         ends: new Date()
       },
@@ -116,7 +181,7 @@ export class PortfolioComponent implements OnInit {
       },
       {
         title: "reezcom",
-        technologies: ["C#" ,"ASP.NET Core", "Android", "Entity Framework Core", "SQL Server"],
+        technologies: ["C#", "ASP.NET Core", "Android", "Entity Framework Core", "SQL Server"],
         description: "",
         image: "../../../assets/img/portfolio/reezcom.png",
         shortDescription: "",
@@ -129,7 +194,7 @@ export class PortfolioComponent implements OnInit {
       },
       {
         title: "dobi",
-        technologies: ["C#" ,"ASP.NET Core", "Angular.Js", "Entity Framework", "SQL Server"],
+        technologies: ["C#", "ASP.NET Core", "Angular.Js", "Entity Framework", "SQL Server"],
         description: "",
         image: "../../../assets/img/portfolio/dobi.png",
         shortDescription: "",
@@ -170,9 +235,9 @@ export class PortfolioComponent implements OnInit {
         title: "Reganalytics Auth",
         technologies: ["C#", "ASP.NET MVC", "ASP.NET Web API", "SQL Server", "Entity Framework"],
         description: "",
-        image: "",
+        image: "../../../assets/img/portfolio/reganalytics.png",
         shortDescription: "",
-        siteLink: "",
+        siteLink: "https://www.reganalytics.com/",
         employer: "KAZ Software",
         companyName: "Reganalytics",
         companyLocation: "",
