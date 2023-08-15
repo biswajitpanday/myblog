@@ -20,11 +20,11 @@ export class DashboardComponent implements OnInit {
         this.getProfessionalSkills();
     }
 
-    getOtherSkills () {
-        this.otherSkills = ["C#", "ASP.NET Core", "ASP.NET MVC", "ASP.NET Web API 2", "Entity Framework", "MS SQL Server", 
-        "Oracle", "LINQ", "Log4Net", "NUnit", "Node.js", "Express.js", "Hapi", "MongoDB", "JavaScript", "TypeScript", 
-        "JQuery", "ReactJS", "Redux", "Angular", "Angular.js", "Electron", "HTML5", "Bootstrap", "Trello", "Jira", "Git", "Jenkins", "Redis",
-        "Xamarin", "Software Architecture patterns", "Microservices", "Onion Architecture", "n-tier", "3-tire", "AWS EC2", "AWS S3"];
+    getOtherSkills() {
+        this.otherSkills = ["C#", "ASP.NET Core", "ASP.NET MVC", "ASP.NET Web API 2", "Entity Framework", "MS SQL Server",
+            "Oracle", "LINQ", "Log4Net", "NUnit", "Node.js", "Express.js", "Hapi", "MongoDB", "JavaScript", "TypeScript",
+            "JQuery", "ReactJS", "Redux", "Angular", "Angular.js", "Electron", "HTML5", "Bootstrap", "Trello", "Jira", "Git", "Jenkins", "Redis",
+            "Xamarin", "Software Architecture patterns", "Microservices", "Onion Architecture", "n-tier", "3-tire", "AWS EC2", "AWS S3"];
     }
 
     getProfessionalSkills() {

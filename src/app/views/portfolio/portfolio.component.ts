@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
-  portfolioList: IPortfolio[];
-  defaultImage: string;
+  portfolioList?: IPortfolio[];
+  defaultImage?: string;
 
   constructor() { }
 

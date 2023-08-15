@@ -1,7 +1,0 @@
-// Run the application
-ng serve
-
-
-// Build for production
-ng build --aot --build-optimizer
-

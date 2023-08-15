@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import 'hammerjs';
-import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from 'ngx-gallery';
+import { NgxGalleryOptions, NgxGalleryImage, NgxGalleryAnimation } from '@kolkov/ngx-gallery';
 import { AppConstant } from '../../utility/appConstant';
 
 @Component({
@@ -10,16 +10,16 @@ import { AppConstant } from '../../utility/appConstant';
 })
 export class TourDetailsComponent implements OnInit {
 
-  galleryOptions: NgxGalleryOptions[];
-  galleryImages: NgxGalleryImage[];
-  tourDetailList: ITourDetails[];
-  selectedCountryCode: null;
+  galleryOptions?: NgxGalleryOptions[];
+  galleryImages?: NgxGalleryImage[];
+  tourDetailList?: ITourDetails[];
+  selectedCountryCode?: null;
 
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(queryParams => {
-      this.selectedCountryCode = queryParams.countryCode;
+      this.selectedCountryCode = queryParams['countryCode'];
     });
 
     this.getTourDetails();
@@ -30,30 +30,30 @@ export class TourDetailsComponent implements OnInit {
   setGalleryOptions() {
     this.galleryOptions = [
       {
-          width: '100%',
-          height: '200px',
-          preview: true,
-          image: false,
-          thumbnailsColumns: 4,
-          imageAnimation: NgxGalleryAnimation.Fade,
-          thumbnails: true,
-          previewZoom: true
+        width: '100%',
+        height: '200px',
+        preview: true,
+        image: false,
+        thumbnailsColumns: 4,
+        imageAnimation: NgxGalleryAnimation.Fade,
+        thumbnails: true,
+        previewZoom: true
       }
     ];
   }
 
   setGalleryImages() {
-    let temp = [];
-    this.tourDetailList.forEach(element => {
+    let temp: any = [];
+    this.tourDetailList?.forEach(element => {
       var img = this.configureImageForGallery(element);
-      if(img != null)
+      if (img != null)
         temp.push(img);
     });
     this.galleryImages = temp;
   }
 
   configureImageForGallery(obj: ITourDetails) {
-    if(obj.countryCode !== this.selectedCountryCode) 
+    if (obj.countryCode !== "" + this.selectedCountryCode)
       return null;
     return {
       small: `../../../assets/img/tours/${obj.countryName}/small/${obj.image}`,

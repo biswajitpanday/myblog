@@ -7,13 +7,13 @@ const routes: Routes = [
     {
         path: '', component: LayoutComponent,
         children: [
-            { path: RouteConstant.Dashboard, loadChildren: '../dashboard/dashboard.module#DashboardModule' },
-            { path: RouteConstant.About, loadChildren: '../about/about.module#AboutModule' },
-            { path: RouteConstant.Timeline, loadChildren: '../timeline/timeline.module#TimelineModule' },
-            { path: RouteConstant.Portfolio, loadChildren: '../portfolio/portfolio.module#PortfolioModule' },
-            { path: RouteConstant.Tours, loadChildren: '../tours/tours.module#ToursModule' },
-            { path: RouteConstant.User, loadChildren: '../user/user.module#UserModule' },
-            { path: RouteConstant.TourDetails, loadChildren: '../tour-details/tour-details.module#TourDetailsModule' }
+            { path: RouteConstant.Dashboard, loadChildren: () => import('../dashboard/dashboard.module').then(m => m.DashboardModule) },
+            { path: RouteConstant.About, loadChildren: () => import('../about/about.module').then(m => m.AboutModule) },
+            { path: RouteConstant.Timeline, loadChildren: () => import('../timeline/timeline.module').then(m => m.TimelineModule) },
+            { path: RouteConstant.Portfolio, loadChildren: () => import('../portfolio/portfolio.module').then(m => m.PortfolioModule) },
+            { path: RouteConstant.Tours, loadChildren: () => import('../tours/tours.module').then(m => m.ToursModule) },
+            { path: RouteConstant.User, loadChildren: () => import('../user/user.module').then(m => m.UserModule) },
+            { path: RouteConstant.TourDetails, loadChildren: () => import('../tour-details/tour-details.module').then(m => m.TourDetailsModule) }
         ]
     }
 ];

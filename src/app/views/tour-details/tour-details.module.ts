@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { TourDetailsRoutingModule } from './tour-details-routing.module';
 import { TourDetailsComponent } from './tour-details.component';
-import { NgxGalleryModule } from 'ngx-gallery';
+import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 
 @NgModule({
   imports: [
