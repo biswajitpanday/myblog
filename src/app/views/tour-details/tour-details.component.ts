@@ -6,13 +6,14 @@ import { AppConstant } from '../../utility/appConstant';
 
 @Component({
   selector: 'app-tour-details',
-  templateUrl: './tour-details.component.html'
+  templateUrl: './tour-details.component.html',
+  styleUrls: ['./tour-details.component.css']
 })
 export class TourDetailsComponent implements OnInit {
 
-  galleryOptions?: NgxGalleryOptions[];
-  galleryImages?: NgxGalleryImage[];
-  tourDetailList?: ITourDetails[];
+  galleryOptions: NgxGalleryOptions[] = [];
+  galleryImages: NgxGalleryImage[] = [];
+  tourDetailList: ITourDetails[] = [];
   selectedCountryCode?: null;
 
   constructor(private route: ActivatedRoute) { }
@@ -31,7 +32,7 @@ export class TourDetailsComponent implements OnInit {
     this.galleryOptions = [
       {
         width: '100%',
-        height: '200px',
+        height: '400px',
         preview: true,
         image: false,
         thumbnailsColumns: 4,
