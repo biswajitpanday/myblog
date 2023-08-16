@@ -30,6 +30,7 @@
               </div>
             </div>
             <span class="employer-tag">{{portfolio.employer}}</span>
+            <span *ngIf="!portfolio.operational" class="non-operational-tag">No Longer Operational</span>
           </div>
         </div>
 

@@ -1,76 +1,46 @@
 <header class="masthead" style="background-image: url('/assets/img/timeline_cover.jpg')">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="site-heading">
-          <span class="subheading">Career Timeline</span>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="site-heading">
+                    <span class="subheading">Career Timeline</span>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </header>
 
 <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="post-preview">
-            <h2 class="post-title"> &gt; work experiences <span class="blink_me">_</span></h2>
-            
-            <div class="timeline-centered mt-5">
-                <article class="timeline-entry">          
-                    <div class="timeline-entry-inner">
-                        <time class="timeline-time"><span>Software Engineer</span> <span>June 2016 - Present</span></time>
-                        <div class="timeline-icon bg-secondary">
-                            <i class="entypo-feather"></i>
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-preview">
+                <h2 class="post-title"> &gt; work experiences <span class="blink_me">_</span></h2>
+                <div class="timeline-centered mt-5">
+                    <article class="timeline-entry" *ngFor="let timeline of timelineList">
+                        <div class="timeline-entry-inner">
+                            <time class="timeline-time"><span>{{timeline.designation}}</span>
+                                <span>{{timeline.joiningDate | date: 'MMMM yyyy'}} - {{timeline.isCurrentlyWorking ?
+                                    'Present' : timeline.leavingDate | date: 'MMMM yyyy'}}
+                                </span></time>
+                            <div class="timeline-icon bg-secondary">
+                                <i class="entypo-feather"></i>
+                            </div>
+                            <div class="timeline-label">
+                                <h2>{{timeline.organizationName}} <small class="float-md-right float-sm-left"><i
+                                            class="fa fa-map-marker" aria-hidden="true"></i>
+                                        {{timeline.organizationCityMine}}, {{timeline.organizationCountryMine}}</small>
+                                </h2>
+                                <ul class="job-description">
+                                    <li *ngFor="let responsibility of timeline.responsibilities">
+                                        {{responsibility}}
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="timeline-label">
-                            <h2>KAZ Software <small class="float-md-right float-sm-left"><i class="fa fa-map-marker" aria-hidden="true"></i> Shantinagar, Dhaka</small></h2>
-                            <ul class="job-description">
-                                <li>Collaborating with stakeholders as a part of implementation and management of regular high-traffic customer-facing portal.</li>
-                                <li>Coordinating regularly with junior developers to complete the technical requirement and establish consistent feed-back loop.</li>
-                                <li>Handling full stack programming tasks for the development and management of the business-critical application. </li>
-                                <li>Design and implementation of the 99.97% up-time REST API for the high-volume external web application, that provided critical connectivity channel for distributed functionality and increase system cohesion keeping manageable code complexity. </li>
-                                <li>Reviewing the quality of code for the mission-critical online service maintaining code and design consistency across different team members</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="timeline-entry">
-                    <div class="timeline-entry-inner">
-                        <time class="timeline-time"><span>Software Engineer</span> <span>June 2015 - May 2016</span></time>
-                        <div class="timeline-icon bg-secondary">
-                            <i class="entypo-suitcase"></i>
-                        </div>
-                        <div class="timeline-label">
-                            <h2>Chorki Limited <small class="float-right"><i class="fa fa-map-marker" aria-hidden="true"></i> LinkRoad, Gulshan, Dhaka</small></h2>
-                            <ul class="job-description">
-                                <li>Developed Notification Hub for sending a notification to a different platform as web, android and IOS. </li>
-                                <li>Developed a news aggregator tool for storing news from different sources to improve News search.</li>
-                                <li>Contributed for developing the Ad-Network and an E-commerce platform</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-                <article class="timeline-entry">
-                    <div class="timeline-entry-inner">
-                        <time class="timeline-time"><span>Intern</span> <span>Sept 2014 - Dec 2014</span></time>
-                        <div class="timeline-icon bg-secondary">
-                            <i class="entypo-location"></i>
-                        </div>
-                        <div class="timeline-label">
-                            <h2>Brain Station-23 <small class="float-right"><i class="fa fa-map-marker" aria-hidden="true"></i>  Bir Uttam Ak Khandaker Rd, Dhaka</small></h2>
-                            <ul class="job-description">
-                                <li>Worked on a Social & Professional networking site named Whooza.</li>
-                                <li>Contributed to the development of <a href="http://bcps.edu.bd/">BCPS</a> Management Portal.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
+                    </article>
+                </div>
             </div>
-
         </div>
-      </div>
     </div>
 </div>

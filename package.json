@@ -24,6 +24,7 @@
     "angular-confirmation-popover": "^7.0.0",
     "angular-svg-round-progressbar": "^11.0.0",
     "angular2-ladda": "^5.0.0",
+    "date-fns": "^2.30.0",
     "hammerjs": "^2.0.8",
     "ladda": "^2.0.3",
     "moment": "^2.29.4",

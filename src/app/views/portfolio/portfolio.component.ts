@@ -34,10 +34,11 @@ export class PortfolioComponent implements OnInit {
         companyName: "Optimizely",
         companyLocation: "Dhaka, Bangladesh",
         started: new Date("2023/04/01"),
-        ends: new Date()
+        ends: new Date(),
+        operational: true
       },
       {
-        title: "M&A Software",
+        title: "Devensoft",
         technologies: ["C#", "ASP.NET", ".NET MVC", "MSSQL", "LINQ", "TypeScript", "Angular", "Azure"],
         description: "Simplify complex mergers and acquisitions (M&A) with streamlined workflows to improve collaboration, increase the success rate, and gain better visibility into the entire deal lifecycle.",
         image: "../../../assets/img/portfolio/devensoft.png",
@@ -47,7 +48,8 @@ export class PortfolioComponent implements OnInit {
         companyName: "Devensoft",
         companyLocation: "USA",
         started: new Date("2022/02/01"),
-        ends: new Date()
+        ends: new Date(),
+        operational: true
       },
       {
         title: "Reganalytics",
@@ -60,7 +62,8 @@ export class PortfolioComponent implements OnInit {
         companyName: "Reganalytics",
         companyLocation: "Dhaka, Bangladesh",
         started: new Date("2021/06/01"),
-        ends: new Date()
+        ends: new Date(),
+        operational: true
       },
       {
         title: "webEvv",
@@ -73,7 +76,8 @@ export class PortfolioComponent implements OnInit {
         companyName: "webEvv",
         companyLocation: "USA",
         started: new Date("2021/09/01"),
-        ends: new Date()
+        ends: new Date(),
+        operational: true
       },
       {
         title: "Alarm App",
@@ -86,7 +90,8 @@ export class PortfolioComponent implements OnInit {
         companyName: "Bangladesh Red Crescent Society",
         companyLocation: "Dhaka, Bangladesh",
         started: new Date("2021/03/01"),
-        ends: new Date()
+        ends: new Date(),
+        operational: true
       },
       {
         title: "Subscriber Verification System (SVS)",
@@ -99,7 +104,8 @@ export class PortfolioComponent implements OnInit {
         companyName: "Robi",
         companyLocation: "Dhaka, Bangladesh",
         started: new Date("2020/05/01"),
-        ends: new Date()
+        ends: new Date(),
+        operational: true
       },
       {
         title: "JoyList",
@@ -112,7 +118,8 @@ export class PortfolioComponent implements OnInit {
         companyName: "JoyList",
         companyLocation: "USA",
         started: new Date(),
-        ends: new Date()
+        ends: new Date(),
+        operational: false
       },
       {
         title: "DairyApplication",
@@ -125,7 +132,8 @@ export class PortfolioComponent implements OnInit {
         companyName: "Tmr Feeding",
         companyLocation: "Netherlands",
         started: new Date(),
-        ends: new Date()
+        ends: new Date(),
+        operational: false
       },
       {
         title: "EnCue",
@@ -138,7 +146,8 @@ export class PortfolioComponent implements OnInit {
         companyName: "EnCue",
         companyLocation: "",
         started: new Date(),
-        ends: new Date()
+        ends: new Date(),
+        operational: true
       },
       {
         title: "OpiGateWay",
@@ -151,7 +160,8 @@ export class PortfolioComponent implements OnInit {
         companyName: "VRI Gateway",
         companyLocation: "",
         started: new Date(),
-        ends: new Date()
+        ends: new Date(),
+        operational: true
       },
       {
         title: "Shopway",
@@ -164,7 +174,8 @@ export class PortfolioComponent implements OnInit {
         companyName: "Shopway",
         companyLocation: "Dhaka, Bangladesh",
         started: new Date(),
-        ends: new Date()
+        ends: new Date(),
+        operational: false
       },
       {
         title: "here'n'now",
@@ -177,7 +188,8 @@ export class PortfolioComponent implements OnInit {
         companyName: "here'n'now",
         companyLocation: "",
         started: new Date(),
-        ends: new Date()
+        ends: new Date(),
+        operational: false
       },
       {
         title: "reezcom",
@@ -190,7 +202,8 @@ export class PortfolioComponent implements OnInit {
         companyName: "reezcom",
         companyLocation: "Dhaka, Bangladesh",
         started: new Date(),
-        ends: new Date()
+        ends: new Date(),
+        operational: false
       },
       {
         title: "dobi",
@@ -203,7 +216,8 @@ export class PortfolioComponent implements OnInit {
         companyName: "dobi",
         companyLocation: "",
         started: new Date(),
-        ends: new Date()
+        ends: new Date(),
+        operational: false
       },
       {
         title: "World Tax Analyzer (WTA)",
@@ -216,7 +230,8 @@ export class PortfolioComponent implements OnInit {
         companyName: "Reganalytics",
         companyLocation: "",
         started: new Date(),
-        ends: new Date()
+        ends: new Date(),
+        operational: true
       },
       {
         title: "Transfer Pricing Analyzer (TPA)",
@@ -229,7 +244,8 @@ export class PortfolioComponent implements OnInit {
         companyName: "Reganalytics",
         companyLocation: "",
         started: new Date(),
-        ends: new Date()
+        ends: new Date(),
+        operational: true
       },
       {
         title: "Reganalytics Auth",
@@ -242,7 +258,83 @@ export class PortfolioComponent implements OnInit {
         companyName: "Reganalytics",
         companyLocation: "",
         started: new Date(),
-        ends: new Date()
+        ends: new Date(),
+        operational: false
+      },
+      {
+        title: "Notification Hub",
+        technologies: ["JavaScript", "RabbitMQ", "Socket.io", "Node.js", "MongoDB", "GCM"],
+        description: "",
+        image: "../../../assets/img/portfolio/chorki.png",
+        shortDescription: "",
+        conciseSummary: "Designed and developed a versatile Notification Hub, enabling seamless server-to-web, Android, and iOS notification delivery. (JavaScript, RabbitMQ, Socket.io, Node.js, MongoDB, GCM)",
+        siteLink: "",
+        employer: "Chorki Limited",
+        companyName: "Chorki Limited",
+        companyLocation: "Dhaka, Bangladesh",
+        started: new Date("2015-06-01"),
+        ends: new Date("2015-10-31"),
+        operational: false
+      },
+      {
+        title: "News Aggregator",
+        technologies: ["PHP", "MySQL"],
+        description: "",
+        image: "../../../assets/img/portfolio/chorki.png",
+        shortDescription: "",
+        conciseSummary: "Developed a news aggregator tool to improve News search. (PHP, MySQL)",
+        siteLink: "",
+        employer: "Chorki Limited",
+        companyName: "Chorki Limited",
+        companyLocation: "Dhaka, Bangladesh",
+        started: new Date("2015-11-01"),
+        ends: new Date("2016-03-31"),
+        operational: false
+      },
+      {
+        title: "Ad-Network",
+        technologies: ["JavaScript", "Laravel,", "MySQL"],
+        description: "",
+        image: "../../../assets/img/portfolio/chorki.png",
+        shortDescription: "",
+        conciseSummary: "Contributed to developing the Ad-Network and an e-commerce platform. (JavaScript, Laravel, MySQL)",
+        siteLink: "",
+        employer: "Chorki Limited",
+        companyName: "Chorki Limited",
+        companyLocation: "Dhaka, Bangladesh",
+        started: new Date("2016-04-01"),
+        ends: new Date("2016-05-31"),
+        operational: false
+      },
+      {
+        title: "Whooza",
+        technologies: ["JavaScript", "Socket.io", "Node.js", "MongoDB", "HTML", "CSS"],
+        description: "A Combination of Social & Professional site.",
+        image: "",
+        shortDescription: "A Combination of Social and Professional site.",
+        conciseSummary: "Assist to implement new features and fixing bugs in existing features on a Social & Professional networking site named Whooza.",
+        siteLink: "",
+        employer: "Brain Station-23",
+        companyName: "Whooza",
+        companyLocation: "Dhaka, Bangladesh",
+        started: new Date("2014-09-01"),
+        ends: new Date("2014-10-31"),
+        operational: false
+      },
+      {
+        title: "BCPS Management Portal",
+        technologies: ["JavaScript", "Socket.io", "Node.js", "MongoDB", "HTML", "CSS"],
+        description: "Bangladesh College of Physicians and Surgeons has been the pioneer in developing post-graduate medical education in this country. Historically, the College bears a heritage to College of Physicians and Surgeons of Pakistan of which it was the eastern wing. Following the independence of Bangladesh, the College was recreated as a statutory body by a Presidential order, later on ratified by an act of the parliament, to steer postgraduate medical education of a vastly populated, poorly resourced and war-ravaged country.",
+        image: "../../../assets/img/portfolio/bcps.png",
+        shortDescription: "Management Portal of Bangladesh College of Physicians and Surgeons (BCPS)",
+        conciseSummary: "Worked as a team player to implement new features and fixing bugs in new and existing features of the Management Portal of Bangladesh College of Physicians and Surgeons (BCPS)",
+        siteLink: "https://exams.bcps.edu.bd/Home/Index",
+        employer: "Brain Station-23",
+        companyName: "Bangladesh College of Physicians and Surgeons (BCPS)",
+        companyLocation: "Dhaka, Bangladesh",
+        started: new Date("2014-11-01"),
+        ends: new Date("2014-12-31"),
+        operational: true
       },
     ]
   }
@@ -251,8 +343,9 @@ export class PortfolioComponent implements OnInit {
 export interface IPortfolio {
   title: string;
   shortDescription: string;
-  technologies: string[];
   description: string;
+  conciseSummary?: string;
+  technologies: string[];
   image: string;
   siteLink: string;
   employer: string;
@@ -260,4 +353,5 @@ export interface IPortfolio {
   companyLocation: string;
   started: Date;
   ends: Date;
+  operational?: boolean,
 }
