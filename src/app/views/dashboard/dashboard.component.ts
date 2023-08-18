@@ -9,13 +9,16 @@ import * as moment from "moment";
 export class DashboardComponent implements OnInit {
     professionalSkills: IProfessionalSkills[];
     otherSkills: string[];
+    totalExperience: number;
 
     constructor() {
         this.professionalSkills = [];
         this.otherSkills = [];
+        this.totalExperience = 0;
     }
 
     ngOnInit() {
+        this.totalExperience =  new Date().getFullYear() - new Date("2015-06-01").getFullYear();
         this.getOtherSkills();
         this.getProfessionalSkills();
     }

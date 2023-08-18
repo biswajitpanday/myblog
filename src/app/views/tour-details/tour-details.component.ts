@@ -10,9 +10,9 @@ import { AppConstant } from '../../utility/appConstant';
 })
 export class TourDetailsComponent implements OnInit {
 
-  galleryOptions?: NgxGalleryOptions[];
-  galleryImages?: NgxGalleryImage[];
-  tourDetailList?: ITourDetails[];
+  galleryOptions: NgxGalleryOptions[] = [];
+  galleryImages: NgxGalleryImage[] = [];
+  tourDetailList: ITourDetails[] = [];
   selectedCountryCode?: null;
 
   constructor(private route: ActivatedRoute) { }
@@ -20,6 +20,7 @@ export class TourDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.route.queryParams.subscribe(queryParams => {
       this.selectedCountryCode = queryParams['countryCode'];
+      console.log(this.selectedCountryCode);
     });
 
     this.getTourDetails();
@@ -31,7 +32,7 @@ export class TourDetailsComponent implements OnInit {
     this.galleryOptions = [
       {
         width: '100%',
-        height: '200px',
+        height: '500px',
         preview: true,
         image: false,
         thumbnailsColumns: 4,
@@ -39,6 +40,27 @@ export class TourDetailsComponent implements OnInit {
         thumbnails: true,
         previewZoom: true
       }
+      // {
+      //   width: '600px',
+      //   height: '400px',
+      //   thumbnailsColumns: 4,
+      //   imageAnimation: NgxGalleryAnimation.Slide
+      // },
+      // // max-width 800
+      // {
+      //   breakpoint: 800,
+      //   width: '100%',
+      //   height: '600px',
+      //   imagePercent: 80,
+      //   thumbnailsPercent: 20,
+      //   thumbnailsMargin: 20,
+      //   thumbnailMargin: 20
+      // },
+      // // max-width 400
+      // {
+      //   breakpoint: 400,
+      //   preview: false
+      // }
     ];
   }
 
@@ -49,12 +71,14 @@ export class TourDetailsComponent implements OnInit {
       if (img != null)
         temp.push(img);
     });
+    debugger;
     this.galleryImages = temp;
   }
 
   configureImageForGallery(obj: ITourDetails) {
     if (obj.countryCode !== "" + this.selectedCountryCode)
       return null;
+    console.log(obj.image);
     return {
       small: `../../../assets/img/tours/${obj.countryName}/small/${obj.image}`,
       medium: `../../../assets/img/tours/${obj.countryName}/medium/${obj.image}`,

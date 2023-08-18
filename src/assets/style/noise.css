@@ -7,7 +7,7 @@
   z-index: -1;
 }
 #noise::before {
-  /* background-image: url("assets/img/img_noise.png"); */
+  background-image: url("src/assets/img/img_noise.png");
   position: absolute;
   content: "";
   height: 300%;
