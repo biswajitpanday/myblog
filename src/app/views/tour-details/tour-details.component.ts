@@ -6,7 +6,8 @@ import { AppConstant } from '../../utility/appConstant';
 
 @Component({
   selector: 'app-tour-details',
-  templateUrl: './tour-details.component.html'
+  templateUrl: './tour-details.component.html',
+  styleUrls: ['./tour-details.component.css']
 })
 export class TourDetailsComponent implements OnInit {
 
@@ -32,7 +33,7 @@ export class TourDetailsComponent implements OnInit {
     this.galleryOptions = [
       {
         width: '100%',
-        height: '500px',
+        height: '400px',
         preview: true,
         image: false,
         thumbnailsColumns: 4,
