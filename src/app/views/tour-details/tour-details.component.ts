@@ -72,14 +72,12 @@ export class TourDetailsComponent implements OnInit {
       if (img != null)
         temp.push(img);
     });
-    debugger;
     this.galleryImages = temp;
   }
 
   configureImageForGallery(obj: ITourDetails) {
     if (obj.countryCode !== "" + this.selectedCountryCode)
       return null;
-    console.log(obj.image);
     return {
       small: `../../../assets/img/tours/${obj.countryName}/small/${obj.image}`,
       medium: `../../../assets/img/tours/${obj.countryName}/medium/${obj.image}`,
@@ -152,36 +150,7 @@ export class TourDetailsComponent implements OnInit {
         image: "thailand04.jpg",
         description: "",
         year: ""
-      },
-      {
-        countryName: AppConstant.thailand,
-        countryCode: AppConstant.thailandCC,
-        image: "thailand05.jpg",
-        description: "",
-        year: ""
-      },
-      {
-        countryName: AppConstant.thailand,
-        countryCode: AppConstant.thailandCC,
-        image: "thailand06.jpg",
-        description: "",
-        year: ""
-      },
-      {
-        countryName: AppConstant.thailand,
-        countryCode: AppConstant.thailandCC,
-        image: "thailand07.jpg",
-        description: "",
-        year: ""
-      },
-      {
-        countryName: AppConstant.thailand,
-        countryCode: AppConstant.thailandCC,
-        image: "thailand08.jpg",
-        description: "",
-        year: ""
       }
-
     ]
   }
 }

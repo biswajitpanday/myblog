@@ -1,4 +1,7 @@
-<header class="masthead" style="background-image: url('/assets/img/profile_cover.jpg')">
+<header
+  class="masthead black-and-white "
+  style="background-image: url('/assets/img/profile_cover.jpg')"
+>
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
@@ -17,31 +20,68 @@
   <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
       <div class="post-preview">
-        <h2 class="post-title"> &gt; about me <span class="blink_me">_</span></h2>
-        <p style="font-family: 'Roboto', sans-serif;">
-          I'm a full stack software engineer from Dhaka, Bangladesh.
+        <h2 class="post-title">
+          &gt; about me <span class="blink_me">_</span>
+        </h2>
+        <div style="font-family: 'Roboto', sans-serif">
+          <p class="mb-1">
+            <small>
+              I'm a {{ totalExperience }} years experienced seasoned Full-Stack
+              Developer &amp; Tech Enthusiast proficient in
+              <strong>C#, JavaScript, TypeScript, SQL &amp; NoSQL</strong>. I
+              specialize in crafting software solutions using
+              <strong>ASP.NET, Angular, React &amp; Node.js,</strong> creating
+              seamless user experiences. Leading cross-functional teams is
+              second nature to me, driving projects from concept to triumph.
+            </small>
+          </p>
+          <p class="mt-2 mb-1">
+            <small>
+              My contributions span optimizing
+              <strong>B2B Commerce platforms</strong> &amp; pioneering
+              <strong>Microservices &amp; Serverless architectures</strong>. I
+              prioritize
+              <strong
+                >clean code, agile methodologies &amp; constant
+                improvement</strong
+              >. Holding a Bachelor's degree in Computer Science &amp;
+              Engineering, I'm recognized for research &amp; hackathon
+              achievements.
+            </small>
+          </p>
+          <p class="mt-2 mb-0">
+            <small>
+              An active open-source contributor &amp; coding enthusiast, I'm
+              dedicated to perpetual learning. Beyond coding, I explore new
+              destinations, experiment with cooking &amp; immerse myself in
+              music's rhythm.
+            </small>
+          </p>
+
+          <!-- I'm a full stack software engineer from Dhaka, Bangladesh.
           I've more than {{totalExperience}} years of experience developing desktop, web &amp; mobile applications.
           Engaged the last 4 years in developing my skills as a web developer using different technologies like
           <strong>C#, ASP.Net MVC, ASP.Net Core, Angular, React, Node.js</strong> etc. Also have some experience in developing android mobile applications using
-          <strong>Java</strong>. I'm always keen to learn more about new technologies &amp; ready to take new challenges.
-        </p>
+          <strong>Java</strong>. I'm always keen to learn more about new technologies &amp; ready to take new challenges. -->
+        </div>
       </div>
-      <hr>
+      <hr />
     </div>
   </div>
 
   <div class="row">
     <div class="col-lg-8 col-md-10 mx-auto">
       <div class="post-preview">
-        <h2 class="post-title"> &gt; professional skills <span class="blink_me">_</span></h2>
+        <h2 class="post-title">
+          &gt; professional skills <span class="blink_me">_</span>
+        </h2>
 
         <div class="row mt-5">
-          
-          <div *ngFor="let skill of professionalSkills;" [ngClass]="skill.col">
+          <div *ngFor="let skill of professionalSkills" [ngClass]="skill.col">
             <div class="row justify-content-center align-items-center">
               <round-progress
                 [current]="skill.levelPercentage"
-                [max]=100
+                [max]="100"
                 [color]="'#363636'"
                 [background]="'#eaeaea'"
                 [radius]="80"
@@ -52,25 +92,31 @@
                 [responsive]="false"
                 [duration]="800"
                 [animation]="'easeInOutQuart'"
-                [animationDelay]="0"></round-progress>
-              </div>
-              <div class="text-center skill-per">{{skill.levelPercentage}}%</div>
-              <div class="text-center font-weight-bold">{{skill.stack}}</div>
-              <div class="text-center form-control-sm mb-3">{{skill.expertiseLabel}}, {{skill.yearsOfExperience}} years</div>
+                [animationDelay]="0"
+              ></round-progress>
+            </div>
+            <div class="text-center skill-per">
+              {{ skill.levelPercentage }}%
+            </div>
+            <div class="text-center font-weight-bold">{{ skill.stack }}</div>
+            <div class="text-center form-control-sm mb-3">
+              {{ skill.expertiseLabel }}, {{ skill.yearsOfExperience }} years
+            </div>
           </div>
-          
         </div>
       </div>
     </div>
   </div>
-  
+
   <div class="row mt-5">
     <div class="col-lg-8 col-md-10 mx-auto text-center">
-      <h5 class="text-center mb-5"><span class="blink_me">_</span> additionally <span class="blink_me">_</span></h5>
-      <span class="skill-tag" *ngFor="let skill of otherSkills;">{{skill}}</span>
+      <h5 class="text-center mb-5">
+        <span class="blink_me">_</span> additionally
+        <span class="blink_me">_</span>
+      </h5>
+      <span class="skill-tag" *ngFor="let skill of otherSkills">{{
+        skill
+      }}</span>
     </div>
   </div>
-
 </div>
-
-
